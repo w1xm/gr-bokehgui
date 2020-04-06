@@ -52,4 +52,5 @@ from .vec_sink_c import vec_sink_c
 from .vec_sink_f import vec_sink_f
 from .waterfall_sink_c import waterfall_sink_c
 from .waterfall_sink_f import waterfall_sink_f
+from . import bokeh_layout as BokehLayout
 #
