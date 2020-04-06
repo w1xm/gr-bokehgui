@@ -26,13 +26,13 @@ class range_slider():
         self.initialize(label, start, end, step, callback_throttle, default)
 
     def initialize(self, label, start, end, step, callback_throttle, default):
-        self.slider = RangeSlider(start = start, end = end, range = default,
+        self.slider = RangeSlider(start = start, end = end, value = default,
                                   step = step, title = label,
                                   callback_throttle = callback_throttle)
         self.widget_lst.append(self.slider)
 
     def add_callback(self, callback):
-        self.slider.on_change('range', callback)
+        self.slider.on_change('value', callback)
 
     def set_value(self, value):
-        self.slider.range = value
+        self.slider.value = value
