@@ -133,7 +133,7 @@ class vec_sink_c(bokeh_plot_config):
                                 code = """
                             var no_of_elem = cb_obj.data.x.length;
                             var data = cb_obj.data;
-                            nconn = Object.getOwnPropertyNames(data).length -1;
+                            const nconn = Object.getOwnPropertyNames(data).length -1;
                             var max_data = max_hold_source.data;
                             max_data.x = cb_obj.data.x;
 
