@@ -54,7 +54,7 @@ export class WaterfallRendererView extends RendererView {
     this.connect(this.model.change, this.request_render)
   }
 
-  render(): void {
+  protected _render(): void {
     const ctx = this.layer.ctx
     ctx.save()
 
